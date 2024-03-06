@@ -1,0 +1,59 @@
+.checkerboard {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(8, 1fr)
+   
+
+}
+.checkerboard>img{border: solid 2px black;padding:10px; }
+ 
+.checkerboard {
+    height: 400px;
+    width: 400px;
+}
+
+.checkerboard:nth-child() {
+background-color: black;
+}
+.checkerboard>img:nth-child(even) {
+    background-color: blac;.checker:nth-child(9n) {
+        background-color: white;
+    }
+}
+
+.checkerboard>img:nth-child(odd) {
+    background-color: green;} 
+
+
+
+
+
+
+/* @keyframes example { */
+  /* from {background-color: green;}
+  to {background-color: black;} */
+/* } */
+
+/* 
+ .checkerboard>img:nth-child(even){
+  width: 100px;
+  height: 100px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  from {background-color: black;}
+  to {background-color: green ;}
+}
+
+
+ .checkerboard>img:nth-child(odd){
+  width: 100px;
+  height: 100px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+  */

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Tacos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="tacos.css">
+  </head>
+<body>
+  
+    <!-- Nav Bar -->
+<div class="navbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a><img src="tacoPics/gittacoslogo1.png" width="120px" height="120px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+            
+              </li>
+              <li class="nav-item">
+            
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</div>
+    <h1>GIT TACOS</h1>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="tacoPics/taco1.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="tacoPics/taco2.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="tacoPics/taco3.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="menuItems">
+        <!-- commented out temporarily for visual cleanliness -->
+        <h2>Menu Items</h2>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="tacoPics/softTaco.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Soft-Shell Taco</h5>
+                  <p class="card-text">Enjoy our succulent soft shell tacos filled with fresh veggies.
+                    Choose between our all natural corn our flour shells.
+                    </p>
+                </div>
+                <div class="card-footer">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-danger">Quantity
+                    </button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">1</a></li>
+                      <li><a class="dropdown-item" href="#">2</a></li>
+                      <li><a class="dropdown-item" href="#">3</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#"></a></li>
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="tacoPics/hardTaco.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Hard-Shell Taco</h5>
+                  <p class="card-text">Enjoy our succulent hard shell tacos filled with fresh veggies.
+                    Choose between our all natural corn our flour shells.</p>
+                </div>
+                <div class="card-footer">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-danger">Quantiy</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">1</a></li>
+                      <li><a class="dropdown-item" href="#">2</a></li>
+                      <li><a class="dropdown-item" href="#">3</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#"></a></li>
+                    </ul>
+                  </div>                
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <div class="card h-100">
+                <img src="tacoPics/burrito.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Burrito</h5>
+                  <p class="card-text">Try our hefty built burritos filled with, rice, beans, fresh veggies and the protein of your choice. 
+                    Choose between Beef, Chicken, Shrimp, or Black Bean. </p>
+                </div>
+                <div class="card-footer">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-danger">Quantiy</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">1</a></li>
+                      <li><a class="dropdown-item" href="#">2</a></li>
+                      <li><a class="dropdown-item" href="#">3</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                    </ul>
+                  </div>                
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="tacoPics/burritobowl.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Burrito Bowl</h5>
+                  <p class="card-text">Try our hefty built burrito bowl filled with, rice, beans, fresh veggies and the protein of your choice. 
+                    Choose between Beef, Chicken, Shrimp, or Black Bean. .</p>
+                </div>
+                <div class="card-footer">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-danger">Quantiy</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">1</a></li>
+                      <li><a class="dropdown-item" href="#">2</a></li>
+                      <li><a class="dropdown-item" href="#">3</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </div>                
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="tacoPics/Quesidilla.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Quesadilla</h5>
+                  <p class="card-text">Our  Quesadillas are oozing with Monterey cheese, pepper jack, and cheddar cheese, and a protein of your choice. 
+                    Choose between Beef, Chicken, or Shrimp.</p>
+                </div>
+                <div class="card-footer">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-danger">Quantiy</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">1</a></li>
+                      <li><a class="dropdown-item" href="#">2</a></li>
+                      <li><a class="dropdown-item" href="#">3</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                    </ul>
+                  </div>                
+                </div>
+              </div>
+            </div>        
+            <div class="col">
+              <div class="card h-100">
+                <img src="tacoPics/tacoSalad.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Taco Salad</h5>
+                  <p class="card-text">Mix it up with our taco salad. Our Taco Salad is filled with fresh organic veggies,  blackbeans, cilantro and a protein of your choice.
+                    Choose between Beef, Chicken,  or Shrimp.</p>
+                </div>
+                <div class="card-footer">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-danger">Quantiy</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">1</a></li>
+                      <li><a class="dropdown-item" href="#">2</a></li>
+                      <li><a class="dropdown-item" href="#">3</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                    </ul>
+                  </div>                
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="tacoPics/torta.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tortas</h5>
+                  <p class="card-text">Try a Torta! Filled with fresh veggies, and two proteins of your choice. Choice of protein: Chicken, Shrimp, Beef, Beans.</p>
+                </div>
+                <div class="card-footer">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-danger">Quantiy</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">1</a></li>
+                      <li><a class="dropdown-item" href="#">2</a></li>
+                      <li><a class="dropdown-item" href="#">3</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                    </ul>
+                  </div>                
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="tacoPics/Horchata.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Horchata</h5>
+                  <p class="card-text">Indulge in our milky flavored Horchata!</p>
+                </div>
+                <div class="card-footer">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-danger">Quantiy</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">1</a></li>
+                      <li><a class="dropdown-item" href="#">2</a></li>
+                      <li><a class="dropdown-item" href="#">3</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                    </ul>
+                  </div>                
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="tacoPics/chipsAndQueso.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Chips & Queso</h5>
+                  <p class="card-text">Enjoy our freshly toasted corn chips, with our cheesy melted Mexican Queso.</p>
+                </div>
+                <div class="card-footer">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-danger">Quantiy</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">1</a></li>
+                      <li><a class="dropdown-item" href="#">2</a></li>
+                      <li><a class="dropdown-item" href="#">3</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                    </ul>
+                  </div>                
+                </div>
+              </div>
+            </div>                                
+          </div>
+        </div> -->
+
+
+        <!-- Unfinished Drink Menu -->
+
+        <!-- <h2>Drinks</h2>
+        <div class="drinkFlex">
+          <div class="card h-100" id="horchata">
+            <img src="tacoPics/Horchata.jpeg" class="card-img-top" alt="Horchata" height="500px" width="50%">
+            <div class="card-body">
+              <h5 class="card-title">Horchata</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger">Quantity</button>
+                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">1</a></li>
+                  <li><a class="dropdown-item" href="#">2</a></li>
+                  <li><a class="dropdown-item" href="#">3</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card h-100">
+            <img src="tacoPics/jarritos.jpeg" class="card-img-top" alt="jarritos" height="1fr" width="1fr">
+            <div class="card-body">
+              <h5 class="card-title">Jarritos</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div> 
+        </div> -->
+        
+      </div>
+
+      <!-- JUSTIN'S SPACE FOR PRACTICE -->
+      <!-- <div class="justinFlex"> -->
+        <!-- <div class="item1">
+          <h3>Papusas</h3>
+        </div>
+        <div class="item2">
+          <h3>Paella</h3>
+        </div>
+        <div class="item3">
+          <h3>Arepa</h3>
+        </div>
+        <div class="item4">
+          <h3>Tamales</h3>
+        </div>
+        <div class="item5">
+          <h3>Patata Bravas</h3>
+        </div>
+
+      </div> --> -->
+      
+
+      
+
+
+
+
+
+
+
+
+
+      <!-- JUSTIN'S SPACE FOR PRACTICE -->
+
+      
+
+
+
+      <!-- GABES SPACE DO NOT ENTER (DONT PEAK AT MY SPACE JUSTIN ) -->
+      <div>
+        <p>
+        </p>
+      </div>
+
+
+
+
+
+
+      <!-- GABES SPACE DO NOT ENTER  -->
+
+
+
+
+
+
+
+      <!-- Ashley lives here -->
+      <!-- <aside class="content">
+        <p> GIT TACO TUESDAYS</p>
+        <p> Every Tuesday Night, We offer 50 Cent Tacos with the purchase of your favorite margarita. 
+        <p> Must be 21 or older to participate. </p>
+        <p> Party starts at 9pm and ends at midnight!</p>
+      </aside> -->
+
+
+
+
+
+
+
+          
+
+      
+    <!-- Accordian -->
+    <div class="accordion ac1" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button topac loc1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Location 1 
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Atlanta,GA</strong> The Alanta location is our flagship location. It open in 1997 by our founders, Mr. and Mrs. GitFabulous!!!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+           Location 2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Fayetteville,GA</strong> On our 10th anniversary we graciously opened our 2nd location in Fayettevile,GA do to a high demand for our delicious Gittacos south of Atlanta. Thank you to all our loyal customers.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Location 3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Duluth,GA</strong> On February 19,2023 we proudly opend a 3rd location for everyone to enjoy with the help of our first franchisee. Be sure to check them out.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+<div class="footer1">
+    <p>Contact us</p>
+    <p>Careers</p>
+    <p> Address: NotafakeAddress ln, Atlanta, Georgia, 9001</p>
+
+</div>
+    
+
+
+
+
+   
+    
+</body>
+</html>

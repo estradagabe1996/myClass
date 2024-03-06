@@ -1,0 +1,18 @@
+.gen {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 300px;
+    padding: 100px 0;
+    }
+.exo {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.liv {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: burlywood;
+}

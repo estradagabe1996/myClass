@@ -1,0 +1,27 @@
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.checker {
+    height: 100px;
+    width: 1fr;
+}
+
+.checker:nth-child(odd) {
+    background-color: black;
+    background-image: 
+}
+
+.checker:nth-child(even) {
+    background-color: green;
+    /* background-image:  url("apple.svg"); */
+}
+
+
+.checker:nth-child(9n) { 
+    background-color: white;
+}

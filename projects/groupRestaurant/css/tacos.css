@@ -1,0 +1,70 @@
+.d-block w-100 {
+    width: 600px;
+    height: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+}
+
+/* Justin Style */
+.justinFlex {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.item1 {
+    width: 25%;
+    background-color: coral;
+    order: 1;
+    padding: 15px;
+}
+
+.item2 {
+    width: 25%;
+    background-color: darkmagenta;
+    order: 3;
+    padding: 15px;
+}
+
+.item3 {
+    width: 25%;
+}
+
+.item4 {
+    width: 25%;
+}
+
+.item5 {
+    width: 25%;
+}
+
+
+/* Ashley lives here */
+.content{
+    display: flex;
+    justify-content: center;
+    align-self: right;
+    
+}
+
+
+/* Footer */
+.footer1{display: flex;
+    justify-content: center;}
+    .footer1{background-color: red;}
+
+
+
+
+/* Accordion */
+.ac1{
+    width: 300px;;
+    border-radius: 10px;
+    
+    }
+
+    
