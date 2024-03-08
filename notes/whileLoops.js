@@ -76,6 +76,7 @@ function idGenerator(users) {
     }
     console.log(users)
 }
+}
 idGenerator(userAccounts);
 
 // user[i].id 
@@ -141,8 +142,7 @@ idGenerator(userAccounts);
 // console.log(userAccounts)
 
 
-/*
-use your favorite browser to figure out how to conver the current list of user birthdays from a string to a date.
 
-determine if you can compate dates using <, >, == similar to any regualr numbers
-*/
+// use your favorite browser to figure out how to conver the current list of user birthdays from a string to a date.
+
+// determine if you can compate dates using <, >, == similar to any
