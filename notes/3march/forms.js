@@ -5,6 +5,7 @@ function getEmail() {
   console.log("Email: ", email.value);
   console.log("Password: ", password.value);
   userLogins.push(email, password);
+  userLogins.push 
 }
 
 let userLogins = [
