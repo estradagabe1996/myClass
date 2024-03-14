@@ -1,17 +1,7 @@
-function getEmail() {
-  let email = document.getElementById("email");
-  let password = document.getElementById("password");
-  
-  console.log("Email: ", email.value);
-  console.log("Password: ", password.value);
-  userLogins.push(email, password);
-  userLogins.push 
-}
-
 let userLogins = [
   {
       "name": "John Doe",
-      "email": "john.doe@example.com",
+      "email": "john.doe@gmail.com",
       "password": "password1",
       "address": "123 Main St",
       "zip_code": "12345",
@@ -27,7 +17,7 @@ let userLogins = [
   },
   {
       "name": "Michael Johnson",
-      "email": "michael.johnson@example.com",
+      "email": "`michael.johnson@example.com`",
       "password": "password3",
       "address": "789 Oak St",
       "zip_code": "34567",
@@ -36,12 +26,27 @@ let userLogins = [
   // Continue adding other users here...
 ]
 
+function getEmail() {
+  let email = document.getElementById("email");
+  let password = document.getElementById("password");
+  
+  console.log("Email: ", email.value);
+  console.log("Password: ", password.value);
 
-function checkPassword() {
-    for (i = 0 ; i < userLogins.length; i++){
-      if(getEmail.match(userLogins[i].password)) {
-
-      }
+  for(let i = 0; i < userLogins.length; i++) {
+    if(userLogins[i].email === email.value && userLogins[i].password === password.value) {
+      loggedIn = true
+      break;
+    } else {
+      loggedIn = false
     }
-
+  }
+  if(loggedIn === true){
+    console.log("Logged In");
+  } else {
+    console.log("Try Again"); 
+  }
 }
+
+
+
