@@ -1,0 +1,17 @@
+{
+  "name": "TodoList",
+  "version": "1.0.0",
+  "description": "Basic todolist for keeping track of things", 
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon classwork4_2.js"
+  },
+  "author": "Gabe Estrada",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "winston": "^3.13.0"
+  }
+}
