@@ -9,7 +9,9 @@ assign
 were going through each end point and making them air tight
 */
 
-else if(Object.keys(req.query).length != 0 ) &&
-    (Object.keys(req.query)[0] !=  && Object.keys(req.query)[0])
+// else if(Object.keys(req.query).length != 0 ) &&
+    // (Object.keys(req.query)[0] !=  && Object.keys(req.query)[0])
 
-else if(isNaN(req.query.id) && req.query.id != undefind) {}
+// else if(isNaN(req.query.id) && req.query.id != undefind) {}
+
+// get in the habit of making food documentation aka good  comments in your code especially in your api's

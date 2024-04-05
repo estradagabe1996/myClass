@@ -7,7 +7,9 @@ app.use(bodyParser.json()) // for parsing application/json
 
 let todos = [];
 let number_of_todos = 1;
+let clientID = 0;
 
+// create a function for the client errors 
 function clientError(req, message, errorCode){
     logger.log({
         level: 'info',
@@ -40,6 +42,10 @@ const logger = winston.createLogger({
 // GET requests should never have a body
 //  /* <= this is called a wild card, it a shortcut to show every endpoint 
 
+/*
+Middleware: 
+    Creates a log for every API call
+*/
 app.all('/*', (req, res, next) => {
     logger.log({
         level: 'info',
@@ -48,10 +54,18 @@ app.all('/*', (req, res, next) => {
             query_parameters: req.query,
             path_parameters: req.params,
             ip: req.ip,  
+            body: req.body,
             timestamp: new Date(),
         });
         next()
 })
+
+/*
+Endpint:
+    returns a list of all todos, if an id is provided, only a single todo is returned. 
+Query Parameters: 
+    id[number]: the id of the todo
+*/
 
 app.get('/todo', (req, res)=> {
     // Check if a body was provided in the request
@@ -103,18 +117,13 @@ app.get('/todo', (req, res)=> {
 })
 // object cannot be checked if they are empty! you have to use built in fucntion to check if the object has a ny `keys` 
 
-// Returns entire todolist
-// app.get('/todo', function (req, res) {
-//   res.json({todos});
-// })
-
-// // Return a single todolist
-// app.get('/todo/:id', function (req, res) {
-//     let index = req.params.id - 1;
-//     res.json(todos[index]);
-//   })
-
-// Adds a single task to the todolist
+/*
+Endpint:
+    Adds a todo to the list. If a list parameter is provided it addds multiple todos in one call
+Body:
+    todo[string](required): the task to be added to the todolist
+    list[array]: an array that contains several todos
+*/
 app.post('/todo', function(req, res) {
     //console.log(req.body.list.length);
     //Check if there is an array called list
@@ -131,25 +140,38 @@ app.post('/todo', function(req, res) {
     
 })
 
-// // Updates a todo task
-// app.put('/todo/:id', (req, res)=> {
-//     // check to make sure Id is only numbers and no letters
-//     let id = req.params.id - 0;
-//     console.log(typeof("j" - 0))
-//     if(typeof(id) == typeof(1)){
-//         let index = req.params.id - 1;
-//         todos[index].todo = req.body.todo;
-//         res.json(todos[index]);
-//     }else{
-//         res.json('error I.D. not accepted');
-//     }
-// })
-// if(todos[i] != undefined){
-//     if(req.body.todo != undefined)
-// }
+/*
+Endpint:
+    Updates an existing todo and modifies its data
+Path parameter:
+    id[number](required): the task to be updated in the todolist
+Body: 
+    todo[string]: the task to be updated
+    completed[boolean]: the status of the task
+*/
+app.put('/todo/:id', (req, res)=> {
+    // check to make sure Id is only numbers and no letters
+    let id = req.params.id - 0;
+    console.log(typeof("j" - 0))
+    if(typeof(id) == typeof(1)){
+        let index = req.params.id - 1;
+        todos[index].todo = req.body.todo;
+        res.json(todos[index]);
+    }else{
+        res.json('error I.D. not accepted');
+    }
+})
+if(todos[i] != undefined){
+    if(req.body.todo != undefined)
+}
 
 
-
+/*
+Endpint:
+    Deletes an existing todo
+Path Parameters:
+    id[number](required): the id of the task to be deleted in the todolist
+*/
 app.delete('/todo/:id', (req, res) => {
     // console.logs
     console.log(req.params.id)
