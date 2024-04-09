@@ -161,9 +161,9 @@ app.put('/todo/:id', (req, res)=> {
         res.json('error I.D. not accepted');
     }
 })
-if(todos[i] != undefined){
-    if(req.body.todo != undefined)
-}
+// if(todos[i] != undefined){
+//     if(req.body.todo != undefined)
+// }
 
 
 /*

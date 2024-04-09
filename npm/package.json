@@ -4,7 +4,7 @@
   "description": "Basic todolist for keeping track of things", 
   "main": "server.js",
   "scripts": {
-    "start": "nodemon classwork4_2.js"
+    "start": "nodemon classwork4_2.js && PGPASSWORD=goodworks17 psql -U postgres -d postgres  -a -f ../sql/todo.sql"
   },
   "author": "Gabe Estrada",
   "license": "ISC",
