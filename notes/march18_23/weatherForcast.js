@@ -22,6 +22,8 @@ function buttonClick() {
 console.log("button click")
 fetch("https://api.open-meteo.com/v1/forecast?latitude=33.749&longitude=-84.388&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,wind_speed_10m_max&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch")
 
+// best practice to have return statement  
+
 .then((response) => response.json())
 
      .then((data) => {
@@ -79,3 +81,23 @@ fetch("https://api.open-meteo.com/v1/forecast?latitude=33.749&longitude=-84.388&
 }
 
 // buttonClick();
+
+// create an image tag 
+
+let weatehrImage = document.createElement("img");
+if(currentWeather.condition === "sunny") {
+    weatehrImage.src = "../../assests/sun.png"
+} else if( currentWeather.condition === "cloudy") {
+    weatehrImage.src = "../../assests/cloudy.png"
+}
+
+// connect image to HTML
+document.body.appendChild(weatherImage);
+
+
+/* this works on every attribute that has a tag.
+
+*/
+let randomIndex = Math.ceil(Math.random() * 10);
+    console.log(randomIndex);
+    console.log(response.results[randomIndex]);

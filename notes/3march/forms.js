@@ -33,7 +33,8 @@ function getEmail() {
   console.log("Email: ", email.value);
   console.log("Password: ", password.value);
 
-  for(let i = 0; i < userLogins.length; i++) {
+  for(let i = 0; i < userLogins.length; i++){
+    console.log("test round", i)
     if(userLogins[i].email === email.value && userLogins[i].password === password.value) {
       loggedIn = true
       break;
