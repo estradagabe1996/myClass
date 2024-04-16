@@ -1,0 +1,1 @@
+{"body":{"todo":"test"},"endpoint":"/pokedex","error":400,"ip":"::1","level":"info","message":"Request body is not permitted at this endpoint","method":"GET","path_parameters":{},"query_parameters":{},"timestamp":"2024-04-12T14:51:58.430Z"}
